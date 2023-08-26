@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMAACStem</title>
+    <link rel="stylesheet" type="text/css" href="website.css">
+    <script src="website.js" defer></script>
+
+<!--Coded by Sandhiya-->
+<!-- to show logo icon in website browser tab(run this in is Vs code to see) -->
+<link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+<link rel="stylesheet" href="website.css">
+
+<!--Coded by Camelia-->
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+</style>
+
+<!--Coded by Anh-->
+    <!--Footer fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css"/>
+    <script src="https://kit.fontawesome.com/1b7c9c4617.js" crossorigin="anonymous"></script>
+</head>
+
+<!--HOMEPAGE BODY-->
+<body>
+<!--Coded by Sandhiya-->
+
+  <!-- Navigation bar -->
+<div class="topnav">
+    <a href="#home"> <img src="https://pbs.twimg.com/media/F3ppZ3-XAAEETen?format=png&name=240x240" alt="Home" width="190" height="100" class="logoimage"></a>
+    <a href="#about">About us</a>
+    <a href="#juniorexplorers">Junior Explorers</a>
+    <a href="#explorers">Explorers</a>
+    <a href="#parents">Parents</a>
+    <button id="loginsignupbutton" onclick="window.location.href = 'login.html'">Login/Signup</button>
+    <!-- HTML for search icon in Nav section. Added the search icon image within button element to make serch icon as actual summit search button.-->
+    <div class="searchicon">
+      <!--search bar - a hidden container  -->
+      <input type="text" placeholder="Enter the text here" id="searchtext" class="searchbar" style="display: block;">
+      <!-- search button -->
+      <button id="searchbutton" onclick="hideshow()"><img class="searchiconimg" src="search.png" alt="search" width="45"></button>
+    </div>
+  </div>
+
+<!--Coded by Camelia-->
+    <!-- Create banner with a heading, paragraphs, and a call to action button -->
+    <div class="banner">
+        <div class="text">
+            <h1>Connecting Young Minds to the World of STEM</h1>
+            <p>Unlock the mysteries of science, technology, engineering, and mathematics with us.</p>
+            <p>🔍 Discover captivating experiments, mind-bending puzzles, and the beauty of discovery.</p>
+            <p>🌟 Join a vibrant community of young people and parents passionate about exploring the wonders of STEM.</p>
+            <!-- Can add any page instead of "subscribe" -->
+            <a href="subscribe.html" class="cta-button">Get Started</a>
+        </div>
+    </div>
+
+    <!-- Create a border that will contain a heading and cards for each STEM topic -->
+    <div class="border">
+        <h2>Get ready to dive into the world of STEM and let your curiosity run wild!</h2>
+        <!-- STEM categories -->
+        <div class="categs" id="categs">
+            <div class="categ Science">
+                <h3>Science</h3>
+                <p>Embark on exciting adventures to uncover the secrets of the Universe, where curiosity leads to amazing discoveries!</p>
+                <img class="categ-img" src="https://th.bing.com/th/id/OIP.s0iTJotWf3RFTQ6HLJo0mQHaEL?w=268&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7" alt="Science Image">
+            </div>
+
+            <div class="categ Tech">
+                <h3>Technology</h3>
+                <p>Where imagination meets innovation, turning dreams into reality with creative ideas and amazing inventions!</p>
+                <img class="categ-img" src="https://th.bing.com/th/id/OIP.SU98LV8A21BE93ejBlMIqgHaFR?w=294&h=208&c=7&r=0&o=5&dpr=1.5&pid=1.7" alt="Technology Image">
+            </div>
+
+            <div class="categ Engineer">
+                <h3>Engineering</h3>
+                <p>Designing tomorrow, today - creating, building, and shaping a better world with creativity and innovation!</p>
+                <img class="categ-img" src="https://th.bing.com/th/id/OIP.vLZVjjZ2p12AMB0_QAUITgHaEL?w=244&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7" alt="Engineering Image">
+            </div>
+
+            <div class="categ Math">
+                <h3>Mathematics</h3>
+                <p>Unveiling patterns in the Universe, where numbers and shapes help us understand the beauty of our world!</p>
+                <img class="categ-img" src="https://th.bing.com/th/id/OIP.dplDFo5t4FyGYf9cmWtSWQHaDx?w=307&h=178&c=7&r=0&o=5&dpr=1.5&pid=1.7" alt="Mathematics Image">
+            </div>
+        </div>
+    </div>
+
+<!--Coded by Sandhiya-->
+<div class="events">
+    <div class="eventsheader">
+      <h2>Embark on a journey of discovery with our upcoming events.</h2>
+    </div>
+    <div class="card">
+      <div class="cardrow" id="card1">
+        <h3>Kids' events<br></h3>
+          <p>Discover the top upcoming kids' events online, camps, and more kids' activities.
+          </p>
+          <a href="https://www.moma.co.uk/childrens-art-competitions/"> Click Here</a>
+      </div>
+      <div class="cardrow" id="card2">
+        <h3>Technology<br></h3>
+          <p>Ready to code!! Upcoming Technology events online, camps and coding activities.
+          </p>
+            <a href="https://royalsociety.org/science-events-and-lectures/summer-science-exhibition/"> Click Here</a>
+      </div>
+      <div class="cardrow" id="card3">
+        <h3>Science & Math events<br></h3>
+          <p>Explore the finest upcoming events, including online experiences, camps, and a variety of engaging activities.
+          </p>
+          <a href="https://www.thebigbang.org.uk/the-big-bang-competition/"> Click Here</a>
+      </div>
+    </div>
+  </div>
+
+<!--Coded by Ana-->
+     <!-- Using flexbox -->
+    <div class="container community">
+        <h2 class="h2-community">
+          Discover the power of collaborative learning. <br />
+          Step into our vibrant STEM community where curiosity thrives and minds
+          come together. 💫
+        </h2>
+        <div class="cbtn">
+          <button class="cbtn1" type="button">Forum</button>
+          <button class="cbtn2" type="button">Competitions</button>
+          <button class="cbtn3" type="button">Mentoring</button>
+        </div>
+    </div>
+</body>
+
+<!--Coded by Anh-->
+<!-- Create a footer containing columns -->
+<footer>
+    <div class="columns">
+        <div class="column">
+            <!-- Insert logo -->
+            <img src="https://pbs.twimg.com/media/F3ppZ3-XAAEETen?format=png&name=240x240" alt="Logo">
+            <!-- Social media icons -->
+            <ul class="social-media">
+                <li><a href="https://www.instagram.com"><i class="fa-brands fa-instagram fa-2x"></i></a></li>
+                <li><a href="https://www.facebook.com"><i class="fa-brands fa-facebook-square fa-2x"></i></a></li>
+                <li><a href="https://www.tiktok.com"><i class="fa-brands fa-tiktok fa-2x"></i></a></li>
+                <li><a href="https://www.linkedin.com"><i class="fa-brands fa-linkedin fa-2x"></i></a></li>
+            </ul>
+        </div>
+
+        <!-- Company details -->
+        <div class="column">
+            <ul id="company-info">
+                <li>SMAACStem</li>
+                <li>Worldwide Organisation - Igniting Curiosity, Fueling Futures: Empowering Youth Through STEM Exploration</li>
+            </ul>
+        </div>
+
+        <!-- Easy access links -->
+        <div class="column">
+            <ul class="footer-links">
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Privacy Settings</a></li>
+                <li><a href="#">Sitemap</a></li>
+            </ul>
+        </div>
+
+        <div class="column">
+            <ul class="footer-links">
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Blogs & News</a></li>
+                <li><a href="#">Careers</a></li>
+            </ul>
+        </div>
+
+        <!-- Newsletter and search -->
+        <div class="column">
+            <div class="newsletter">
+                <p>Sign up to our newsletter to get the latest STEM updates!</p>
+                <form action="https://formsubmit.co/hiannnguyen@gmail.com" method="POST">
+                    <input type="email" name="email" placeholder="Email address" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+
+            <div class="footer-search">
+                <p>Can't find what you need?</p>
+                <form>
+                    <input type="text" placeholder="Search">
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <hr class="solid">
+    <p>© 2023 SMAACStem</p>
+</footer>
+    
+
+</html>
