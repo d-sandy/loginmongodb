@@ -30,6 +30,13 @@ body {
 .finalcheck {
   position: fixed;
   /* margin: 100px 100px 100px 150px; */
+  width: 0px;
+  height: 0px;
+  margin: 0px;
+  right: 0px;
+  left: 0px;
+  top: 0px;
+  bottom: 0px;
 }
 .check2{
   display: inline-block;
@@ -65,6 +72,8 @@ body {
   width: 500px;
   /* margin: 30px; */
   position: fixed;
+  margin-left: 600px;
+  margin-top: -350px;
 }
 .signuplinks {
   padding: 20px;
@@ -126,6 +135,8 @@ h1 {
 }
 .loginheader{
   position: fixed;
+  margin-top: -200px;
+  margin-left: 70px;
 }
 .loginheader .signupheader p {
   display: inline;
