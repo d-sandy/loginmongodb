@@ -30,7 +30,7 @@ body {
 .finalcheck {
   width: 900px;
   position: fixed;
-  margin: 100px 100px 100px 150px;
+/*   margin: 100px 100px 100px 150px; */
 }
 .check2{
   float: right;
